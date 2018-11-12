@@ -55,8 +55,6 @@ set nocompatible
         Plugin 'kien/ctrlp.vim'
         " Ag integration
         Plugin 'rking/ag.vim'
-        " Wakatime
-        Plugin 'wakatime/vim-wakatime'
         " Railscasts color scheme
         Plugin 'jpo/vim-railscasts-theme'
         " Various color schemes
@@ -72,34 +70,13 @@ set nocompatible
         Plugin 'git://github.com/hail2u/vim-css3-syntax.git'
         " Highlight colors in css files
         Plugin 'git://github.com/ap/vim-css-color.git'
-    " JavaScript
-        " Vastly improved vim's javascript indentation
-        Plugin 'git://github.com/pangloss/vim-javascript.git'
-        Plugin 'jelera/vim-javascript-syntax'
-        " Plugin 'ternjs/tern_for_vim'
-        " Plugin 'Valloric/YouCompleteMe'
-        " " React
-        Plugin 'git://github.com/mxw/vim-jsx.git'
-        " CoffeeScript support
-        Plugin 'git://github.com/kchmck/vim-coffee-script.git'
-        " beautify
-        Plugin 'git://github.com/maksimr/vim-jsbeautify.git'
-        Plugin 'git://github.com/posva/vim-vue'
+    
     " Ruby/Rails
         " Rails support
         Plugin 'git://github.com/tpope/vim-rails.git'
         " Wisely add "end" in ruby, endfunction/endif/more
         Plugin 'git://github.com/tpope/vim-endwise.git'
-    " Markdown
-        " Plugin 'godlygeek/tabular'
-        " Plugin 'plasticboy/vim-markdown'
-        Plugin 'suan/vim-instant-markdown'
-    " Golang
-        Plugin 'fatih/vim-go'
-        Plugin 'Shougo/deoplete.nvim'
-        Plugin 'zchee/deoplete-go'
-        Plugin 'roxma/nvim-yarp'
-        Plugin 'roxma/vim-hug-neovim-rpc'
+    
 
     filetype plugin indent on     " required!
 
@@ -279,33 +256,8 @@ let mapleader=","
         let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
 
 " Shortcuts
-    " Disable mouse
-        set mouse=
-    " Disable <Arrow keys>
-        " Warning: nightmare mode!
-        inoremap <Up> <NOP>
-        inoremap <Down> <NOP>
-        inoremap <Left> <NOP>
-        inoremap <Right> <NOP>
-        noremap <Up> <NOP>
-        noremap <Down> <NOP>
-        noremap <Left> <NOP>
-        noremap <Right> <NOP>
-        " Navigate with <Ctrl>-hjkl in Insert mode
-        imap <C-h> <C-o>h
-        imap <C-j> <C-o>j
-        imap <C-k> <C-o>k
-        imap <C-l> <C-o>l
-    " Navigate through wrapped lines
-        noremap j gj
-        noremap k gk
-    " <Esc><Esc>
-        " Clear the search highlight in Normal mode
-        " nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
-    " Beautify
-        autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-    " Allow pasting blocks of code without indenting
-        set pastetoggle=<F2>
+ " Normal mode (Esc) --> jj
+ inoremap jj <Esc> """ jj key is <Esc> setting
 
 " Some mess
     set lazyredraw
