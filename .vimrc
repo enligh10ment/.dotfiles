@@ -59,6 +59,8 @@ set nocompatible
         Plugin 'jpo/vim-railscasts-theme'
         " Various color schemes
         Plugin 'flazz/vim-colorschemes'
+        " Ale plugin for syntax check
+        Plugin 'w0rp/ale'
     " CSV
         " CSV support
         " Plugin 'git://github.com/chrisbra/csv.vim.git'
@@ -254,6 +256,10 @@ let mapleader=","
         nmap ,b :FufBuffer<CR>
         " nmap ,t :FufTaggedFile<CR>
         let g:tlist_coffee_settings = 'coffee;f:function;v:variable'
+    " ALE
+        let b:ale_linters = ['pyflakes', 'flake8', 'pylint']
+        let b:ale_fixers = ['eslint']
+        let b:ale_fix_on_save = 1
 
 " Shortcuts
  " Normal mode (Esc) --> jj
