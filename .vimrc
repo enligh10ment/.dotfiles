@@ -14,10 +14,14 @@ set nocompatible
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#rc()
     Plugin 'git://github.com/gmarik/vundle.git'
+    
     " For windows laptop/PC that uses mobaxterm or ubuntu app use this:
     " git clone https://github.com/VundleVim/Vundle.vim.git
     " mkdir -p ~/.vim/bundle (if it's not there)
     " cd ~/.vim/bundle
+    " Now, paste below two lines insted of the one that is above after the call ****
+    " call vundle#rc()
+    " Plugin 'git://github.com/VundleVim/Vundle.vim.git'
     
 
    
