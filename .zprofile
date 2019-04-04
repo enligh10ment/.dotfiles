@@ -19,3 +19,13 @@ unalias run-help 2>/dev/null
 autoload run-help
 HELPDIR=/path/to/zsh_help_directory
 alias help=run-help
+
+
+#dash aliases
+# to get rid of the chdir error(UTF)
+export LC_ALL=C 
+# java set up
+JAVA_HOME=/usr/java/java-8-oracle
+JRE_HOME=/usr/java/java-8-oracle/jre
+# directory highlight that appears as non-human readable in the tree.
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
