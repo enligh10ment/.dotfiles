@@ -10,6 +10,10 @@ export ZSH="/Users/azizniiazbekov/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="xiong-chiamiov-plus"
 
+# Uncomment below zshell theme if you want some minimalizm alternamtive.
+# ZSH_THEME="geoffgarside"
+
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -100,3 +104,8 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 alias ll="ls -lahrt"
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
