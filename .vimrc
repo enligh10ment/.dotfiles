@@ -13,19 +13,9 @@ set nocompatible
     filetype off     " required!
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#rc()
-    Plugin 'git://github.com/gmarik/vundle.git'
-    
-    " For windows laptop/PC that uses mobaxterm or ubuntu app use this:
-    " git clone https://github.com/VundleVim/Vundle.vim.git
-    " mkdir -p ~/.vim/bundle (if it's not there)
-    " cd ~/.vim/bundle
-    " Now, paste below two lines insted of the one that is above after the call ****
-    " call vundle#rc()
-    " Plugin 'git://github.com/VundleVim/Vundle.vim.git'
-    
+    Plugin 'git://github.com/VundleVim/Vundle.vim.git'
 
-   
-   " Plugins
+    " Plugins
     " NOTE: comments after Plugin command are not allowed...
     " Libs
         " For FuzzyFinder
@@ -66,7 +56,7 @@ set nocompatible
         " Ag integration
         Plugin 'rking/ag.vim'
         " Railscasts color scheme
-        Plugin 'jpo/vim-railscasts-theme'
+       " Plugin 'jpo/vim-railscasts-theme'
         " Various color schemes
         Plugin 'flazz/vim-colorschemes'
         " Ale plugin for syntax check
@@ -82,13 +72,13 @@ set nocompatible
         Plugin 'git://github.com/hail2u/vim-css3-syntax.git'
         " Highlight colors in css files
         Plugin 'git://github.com/ap/vim-css-color.git'
-    
+
     " Ruby/Rails
         " Rails support
         Plugin 'git://github.com/tpope/vim-rails.git'
         " Wisely add "end" in ruby, endfunction/endif/more
         Plugin 'git://github.com/tpope/vim-endwise.git'
-    
+
 
     filetype plugin indent on     " required!
 
