@@ -223,7 +223,7 @@ let mapleader=","
            " highlight SpellBad     ctermbg=0   ctermfg=1
 
         catch /^Vim\%((\a\+)\)\=:E185/
-            echo "Solarized theme not found. Run :PluginInstall"
+            "echo "Solarized theme not found. Run :PluginInstall"
         endtry
 
         try
