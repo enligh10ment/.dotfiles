@@ -109,3 +109,5 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias rm="rm -i"
+alias mv="mv -i"
