@@ -101,9 +101,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPS="--extended"
-alias ll="ls -lahrt"
+alias ls='ls -l'
+alias ll='ls -lahrt'
+alias h='history'
+alias p='ps aux'
+alias scp='scp -C'
+alias sudo='command sudo '
+alias g='git'
+alias less='less -R'
+alias pg='pgrep -fli'
+alias weather='curl wttr.in/Chicago'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -111,3 +118,4 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias rm="rm -i"
 alias mv="mv -i"
+alias ls='ls --color=auto'
