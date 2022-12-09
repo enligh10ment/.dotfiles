@@ -58,3 +58,4 @@ nnoremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
 nnoremap <silent> <Leader>gf :YcmCompleter FixIt<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-f> :FZF<CR>
+nnoremap <esc>^[ <esc>^[
