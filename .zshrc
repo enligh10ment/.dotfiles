@@ -119,3 +119,10 @@ alias .....='cd ../../../..'
 alias rm="rm -i"
 alias mv="mv -i"
 alias ls='ls --color=auto'
+
+#aliases for searching files and directories using fzf (apt install fzf)
+alias sd="cd ~ && cd \$(find * -type d | fzf)"
+alias sf="vim \$(find * -type f | fzf)"
+
+# Terraform alias
+alias tf=terraform
